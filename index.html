@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario Online Prototipo</title>
+    <!-- FONT OSWALD -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- OPEN SANS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+        
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="mg-head-detail hidden-xs">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <ul class="into-left">
+                                <li>
+                                    "FECHA  "
+                                    <span id="time" class="time">HORA</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Diario Online Juventud</h1>
+
+            <!-- FECHA -->
+            <!--<script type="text/javascript">
+                var d = new Date();
+            
+            document.write('Fecha :' + d.getDate(), '<br> Mes(1 al 12):' + d.getMonth(), '<br>Anio :' + d.getFullYear(), '<br>Hora :' + d.getHours(), '<br> Minutos :' +d.getMinutes(), '<br>Segundo :' +d.getSeconds());
+
+            </script> -->
+
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="sec_noticias.html">NACIONALES</a>
+                    </li>
+                    <li>
+                        <a href="sec_noticias.html">INTERNACIONALES</a>
+                    </li>
+                    <li>
+                        <a href="sec_noticias.html">ÚLTIMAS NOTICIAS </a>
+                    </li>
+                    <li>
+                        <a href="sec_noticias.html">POPULARES</a>
+                    </li>
+                    <li>
+                        <a href="sec_noticias.html">TENDENCIAS</a>
+                    </li>
+                </ul>
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SLIDER -->
+        <section class="slider-wrap">
+            <ul class="slider1">
+                <div>
+                    <img src="https://picsum.photos/1000/200?random=10" alt="Noticia 1">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                        Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                    <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/1000/200?random=1" alt="Noticia 2">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                        Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                    <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/1000/200?random=10" alt="Noticia 1">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                        Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                    <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/1000/200?random=1" alt="Noticia 2">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                        Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                    <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </ul>
+        </section>
+
+        <!-- SECCION -->
+        <section class="one-four" id="skills">
+            <div class="img-wrap">
+                <img src="https://picsum.photos/300/200?random=4" alt="Imagen">
+            </div>
+            <h3>Populares</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam, totam beatae perferendis
+                blanditiis iure sunt saepe inventore mollitia consectetur harum ipsa quos, fuga reiciendis dolorum ex
+                necessitatibus natus a.
+            </p>
+            <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            <div class="img-wrap">
+                <img src="https://picsum.photos/300/200?random=8" alt="Imagen">
+            </div>
+            <h3>Populares</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam, totam beatae perferendis
+                blanditiis iure sunt saepe inventore mollitia consectetur harum ipsa quos, fuga reiciendis dolorum ex
+                necessitatibus natus a.
+            </p>
+            <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+        </section>
+
+        <!-- SCRIPTS -->
+        <script>
+
+            $(document).ready(function () {
+                $('.slider1').bxSlider({
+                    mode: 'fade'
+                })
+                $('.slider2').bxSlider({
+                    mode: 'fade'
+                })
+                $('.slider3').bxSlider({
+                    mode: 'fade'
+                })
+            })
+        </script>
+
+        <!-- SHOW CASE -->
+        <header class="showcase">
+            <img src="https://picsum.photos/600/350?random=16" alt="Noticia 1">
+            <h2>Tendencias</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet porro, beatae excepturi facilis
+                quibusdam eaque eos sint laborum sit officiis ullam in labore repudiandae, molestiae iste consequatur
+                voluptate enim et!</p>
+            <a href="sec_noticias.html" class="btn">Leer Más <i class="fas fa-angle-double-right"></i></a>
+        </header>
+
+        <!-- ARTICULOS -->
+        <main class="content">
+            <article class="article">
+                <h1>Tlaxcala</h1>
+                <img src="https://picsum.photos/500/200?random=5" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi atque porro quia possimus officia
+                    ipsum illum sed repudiandae natus adipisci?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus.</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="article">
+                <h1>Nativitas</h1>
+                <img src="https://picsum.photos/500/200?random=6" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi atque porro quia possimus officia
+                    ipsum illum sed repudiandae natus adipisci?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus.</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="article">
+                <h1>Nativitas</h1>
+                <img src="https://picsum.photos/500/200?random=7" alt="Imagen">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi atque porro quia possimus officia
+                    ipsum illum sed repudiandae natus adipisci?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus.</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div>
+                <img src="https://i.picsum.photos/id/1072/300/200.jpg?hmac=1J5bkBUAIv2w9X7RW8UpYxhx5SShFlXZoiwr_oFYkeU"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officiis!</p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=1" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officiis!</p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=2" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, officiis!</p>
+            </div>
+        </aside>
+
+        <!-- NOTICIAS -->
+        <div class="news-cards">
+            <div>
+                <img src="https://picsum.photos/300/200?random=10" alt="Noticia 1">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=1" alt="Noticia 2">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=2" alt="Noticia 3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=14" alt="Noticia 3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=15" alt="Noticia 3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300/200?random=17" alt="Noticia 3">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolor placeat delectus officia.
+                    Sequi in, voluptas quam eligendi atque nesciunt!</p>
+                <a href="noticia.html">Leer Más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+            <h4>Footer</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, architecto!</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

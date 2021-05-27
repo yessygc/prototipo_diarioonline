@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Usuario Periodista</title>
+    <!-- OPEN SANS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/usuario_administrador.css">
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <!-- CONTENIDO -->
+    <div class="container active" id="container">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"><i class="fas fa-align-justify"></i></button>
+                <span class="logo">DIARIO JUVENIL ONLINE - ADMINISTRADOR</span>
+            </div>
+
+            <div class="botones-header">
+                <button><i class="fas fa-user-circle"></i></button>
+            </div>
+        </header>
+
+        <!--MENU LATERAL -->
+        <nav class="menu-lateral">
+            <a href="usuario_administrador.html"><i class="fas fa-home"></i>Pagina Principal</a>
+            <a href="estadistica.html" class="active"><i class="fas fa-home"></i>Estadística de Usuarios</a>
+            <a href="#"><i class="fas fa-file-upload"></i>Notas Subidas</a>
+            <a href="formulario_notas.html"><i class="fas fa-plus-square"></i>Agregar Notas</a>
+            <a href="#"><i class="fas fa-edit"></i>Editar Notas</a>
+            <a href="#"><i class="fas fa-window-close"></i>Eliminar Notas</a>
+        </nav>
+
+        <!-- MAIN -->
+        <main class="main">
+            <h1>Estadística de Usuarios</h1>
+
+            <div class="container w-75">
+                <canvas id="chart" height="50" width="90"></canvas>
+            </div>
+
+            <script>
+                var ch = document.getElementById('chart').getContext('2d');
+                var myBarChart = new Chart(ch, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo'],
+                        datasets: [{
+                            label: 'Días de la Semana',
+                            data: [65, 59, 80, 81, 56, 55, 40],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(255, 159, 64, 0.2)',
+                                'rgba(255, 205, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(201, 203, 207, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(255, 159, 64)',
+                                'rgb(255, 205, 86)',
+                                'rgb(75, 192, 192)',
+                                'rgb(54, 162, 235)',
+                                'rgb(153, 102, 255)',
+                                'rgb(201, 203, 207)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </main>
+    </div>
+
+</body>
+
+</html>
