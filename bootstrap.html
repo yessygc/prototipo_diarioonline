@@ -1,22 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    
+
+<body onload="startTime()">
+    <!--   NAVBAR   -->
+    <nav class="navbar navbar-expand-sm navbar-dark btn-danger">
+        <div class="container-md">
+            <div class="clockdate">
+                <span id="time"></span>
+                <span id="date"></span>
+            </div>
+            <!-- HORA & FECHA-->
+            <script>
+                function startTime() {
+                    var today = new Date(), hours = today.getHours(), minutes = today.getMinutes(),
+                        date = today.getDate(), day = today.getDay(), month = today.getMonth();
+
+                    hours = (hours == 0) ? 12 : hours;
+                    hours = (hours > 12) ? hours - 12 : hours;
+
+                    hours = checkTime(hours);
+                    minutes = checkTime(minutes);
+
+                    var dia = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+                        mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+
+                    var hr = document.getElementById('time').innerHTML = hours + ":" + minutes,
+                        dt = document.getElementById('date').innerHTML = dia[day] + ", " + date + " De " + mes[month];
+
+                    var time = setTimeout(function () { startTime(); }, 500);
+                }
+
+                function checkTime(e) {
+                    if (e < 10) {
+                        e = "0" + e;
+                    }
+                    return e;
+                }
+            </script>
+            <a class="navbar-brand" href="#">
+                <img src="img/tecnologia.jpg" alt="" width="200">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Internacional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nacional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tlaxcala</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nativitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Actualidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--   CARROUSEL   -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/cropped-imagenes-paisajes-bonitos-5.jpg" width="500" class="d-block w-30" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/developer.jpg" width="500" class="d-block w-30" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/website.jpg" width="500" class="d-block w-30" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!--   COLUMNAS   -->
 
 
 
+    <!--   FOOTER   -->
 
 
-
-<script src=""></script>
-<script src=""></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
